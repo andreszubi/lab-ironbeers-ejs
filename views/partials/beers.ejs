@@ -1,15 +1,15 @@
 <body>
     <div class="all-beers">
-    <ul>
+   
         <% allBeers.forEach((beer) => { %>
-            <li>
+            
                     <img class="all-beers-img" src="<%= beer.image_url %>" alt="beer picture">
                     <h2><a href="/beers/<%= beer._id %>"><%= beer.name %></a></h2>
                     <h3 class="tagline"><%= beer.tagline %></h3>
                     <p><%= beer.description %></p>
-               
-            </li>
+                
+           
         <% }) %>
-    </ul>
+    
 </div>
 </body>
